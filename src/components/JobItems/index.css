@@ -89,3 +89,6 @@
   align-items: center;
   min-height: 80vh;
 }
+.nav-link {
+  text-decoration: none;
+}

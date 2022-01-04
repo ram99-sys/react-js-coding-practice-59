@@ -85,11 +85,11 @@ class Jobs extends Component {
     this.setState({apiStatus: jobsApiStatusConstants.inProgress})
     const {employmentType, searchInput, salaryRange} = this.state
     const optionsArray = employmentType.join(',')
-    console.log(optionsArray)
+    // console.log(optionsArray)
     const jwtToken = Cookies.get('jwt_token')
-    console.log(jwtToken)
+    // console.log(jwtToken)
     const jobsApiUrl = `https://apis.ccbp.in/jobs?employment_type=${optionsArray}&minimum_package=${salaryRange}&search=${searchInput}`
-    console.log(jobsApiUrl)
+    // console.log(jobsApiUrl)
     const options = {
       headers: {
         Authorization: `Bearer ${jwtToken}`,
@@ -97,14 +97,14 @@ class Jobs extends Component {
       method: 'GET',
     }
     const response = await fetch(jobsApiUrl, options)
-    console.log(response)
+    // console.log(response)
     if (response.ok) {
       const data = await response.json()
-      console.log(data)
+      // console.log(data)
       const updatedData = {
         jobs: data.jobs,
       }
-      console.log(updatedData)
+      // console.log(updatedData)
       const updatedJobsData = updatedData.jobs.map(eachObject => ({
         id: eachObject.id,
         companyLogoUrl: eachObject.company_logo_url,
@@ -115,7 +115,7 @@ class Jobs extends Component {
         location: eachObject.location,
         employmentType: eachObject.employment_type,
       }))
-      console.log(updatedJobsData)
+      // console.log(updatedJobsData)
       this.setState({
         jobsData: updatedJobsData,
         apiStatus: jobsApiStatusConstants.success,
