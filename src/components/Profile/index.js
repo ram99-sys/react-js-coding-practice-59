@@ -31,17 +31,17 @@ class Profile extends Component {
     const response = await fetch(profileApiUrl, options)
     if (response.ok) {
       const data = await response.json()
-      console.log(data)
+      // console.log(data)
       const updatedData = {
         profileDetails: data.profile_details,
       }
-      console.log(updatedData)
+      // console.log(updatedData)
       const updatedProfileData = {
         name: updatedData.profileDetails.name,
         profileImageUrl: updatedData.profileDetails.profile_image_url,
         shortBio: updatedData.profileDetails.short_bio,
       }
-      console.log(updatedProfileData)
+      // console.log(updatedProfileData)
       this.setState({
         profileData: updatedProfileData,
         apiStatus: profileApiStatusConstants.success,

@@ -2,4 +2,45 @@
   background-color: #000000;
   min-height: 100vh;
   padding: 30px 50px;
+  display: flex;
+}
+.profile-section-end {
+  background-color: #f1f5f9;
+  margin: 0px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.search-container {
+  width: 80%;
+}
+.profile-and-filter-section {
+  width: 20%;
+  margin-right: 50px;
+}
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #2c364c;
+  width: 400px;
+}
+.search-input {
+  background-color: transparent;
+  padding: 6px 10px;
+  border: none;
+  color: #7e858e;
+  width: 370px;
+}
+.search-input:focus {
+  outline: none;
+}
+.search-button {
+  background-color: #272727;
+  border: none;
+  padding: 10px;
+  color: #ffffff;
+  margin-bottom: -1px;
+}
+.search-icon {
+  width: 40px;
 }

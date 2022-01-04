@@ -1,0 +1,38 @@
+.employment-type {
+  color: #ffffff;
+}
+.employment-type-heading {
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.checkbox-input {
+  margin-right: 10px;
+}
+.employment-type-item {
+  margin-bottom: 10px;
+}
+.employment-type-section-end {
+  background-color: #f1f5f9;
+  margin: 0px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.salary-range-heading {
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.salary-input-label {
+  color: #ffffff;
+  align-self: center;
+}
+.radio-button {
+  margin-right: 10px;
+  margin-bottom: -5px;
+}
+.salary-list-item {
+  display: flex;
+  align-items: center;
+}
