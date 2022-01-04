@@ -27,10 +27,11 @@
 .salary-input-label {
   color: #ffffff;
   align-self: center;
+  margin-bottom: 15px;
 }
 .radio-button {
   margin-right: 10px;
-  margin-bottom: -5px;
+  margin-bottom: 15px;
 }
 .salary-list-item {
   display: flex;

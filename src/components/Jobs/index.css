@@ -23,6 +23,7 @@
   align-items: center;
   border: 1px solid #2c364c;
   width: 400px;
+  margin-bottom: 30px;
 }
 .search-input {
   background-color: transparent;
@@ -43,4 +44,37 @@
 }
 .search-icon {
   width: 40px;
+}
+.jobs-api-data-container {
+}
+.loader-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+.no-jobs-found-heading {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.no-jobs-found-text {
+  color: #475569;
+}
+.no-jobs-view-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+.failure-view-heading {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.failure-view-text {
+  color: #7e858e;
+  margin-bottom: 10px;
+}
+.failure-view {
+  margin-bottom: 20px;
 }
