@@ -9,6 +9,7 @@ import JobItemDetails from './components/JobItemDetails'
 import ProtectedRoute from './components/ProtectedRoute'
 
 // These are the lists used in the application. You can move them to any component needed.
+/*
 const employmentTypesList = [
   {
     label: 'Full Time',
@@ -46,6 +47,7 @@ const salaryRangesList = [
     label: '40 LPA and above',
   },
 ]
+*/
 
 // Replace your code here
 const App = () => (

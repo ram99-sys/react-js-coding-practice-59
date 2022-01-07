@@ -1,0 +1,46 @@
+.similar-job-data-item {
+  background-color: #272727;
+  padding: 20px;
+  width: 30%;
+  border-radius: 20px;
+}
+.job-item-title {
+  margin-bottom: 5px;
+}
+.similar-jobs-heading {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.job-description-data {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.location-and-role-container {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .similar-job-data-item {
+    width: 40%;
+    margin-bottom: 40px;
+    margin-right: 40px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .similar-job-data-item {
+    width: 43%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .similar-job-data-item {
+    width: 100%;
+    margin-right: 0px;
+  }
+}

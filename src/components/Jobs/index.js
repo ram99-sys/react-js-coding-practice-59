@@ -147,7 +147,7 @@ class Jobs extends Component {
   renderSearchButton = () => {
     const {searchInput} = this.state
     return (
-      <div className="search-bar-container">
+      <div className="search-bar-container search-bar">
         <input
           type="search"
           className="search-input"
@@ -175,7 +175,7 @@ class Jobs extends Component {
       />
       <h1 className="no-jobs-found-heading">No Jobs Found</h1>
       <p className="no-jobs-found-text">
-        We could not found any jobs. Try other filters.
+        We could not find any jobs. Try other filters
       </p>
     </div>
   )
@@ -240,11 +240,35 @@ class Jobs extends Component {
     }
   }
 
+  renderSearchBar = () => {
+    const {searchInput} = this.state
+    return (
+      <div className="search-bar-container not-display-search-bar">
+        <input
+          type="search"
+          className="search-input"
+          placeholder="Search"
+          onChange={this.onChangeSearchInput}
+          value={searchInput}
+        />
+        <button
+          type="button"
+          testid="searchButton"
+          className="search-button"
+          onClick={this.onClickSearchButton}
+        >
+          <BsSearch className="search-icon" />
+        </button>
+      </div>
+    )
+  }
+
   render() {
     return (
       <>
         <Header />
         <div className="jobs-container">
+          {this.renderSearchBar()}
           <div className="profile-and-filter-section">
             <Profile />
             <hr className="profile-section-end" />

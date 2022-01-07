@@ -5,6 +5,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 50px 10px 50px;
+  list-style-type: none;
 }
 .options-list {
   display: flex;
@@ -27,4 +28,49 @@
 }
 .website-logo {
   height: 40px;
+}
+.icons-header {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .options-list {
+    display: none;
+  }
+  .button-option {
+    display: none;
+  }
+  .icons-header {
+    display: flex;
+  }
+  .home-icon {
+    color: #ffffff;
+    font-size: 40px;
+    margin-right: 20px;
+  }
+  .job-icon {
+    color: #ffffff;
+    font-size: 40px;
+    margin-right: 20px;
+  }
+  .logout-icon {
+    color: #ffffff;
+    font-size: 40px;
+    margin-right: 20px;
+  }
+  .header-section {
+    height: 80px;
+  }
+  .logout-icon {
+    background-color: transparent;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header-section {
+    padding: 10px 20px 10px 20px;
+    padding-right: 0px;
+    margin-right: 0px;
+  }
 }

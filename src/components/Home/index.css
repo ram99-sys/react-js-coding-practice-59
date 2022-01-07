@@ -30,3 +30,25 @@
   padding: 8px 20px;
   cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+  .home-container {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/home-sm-bg.png');
+  }
+  .home-text {
+    font-weight: normal;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .home-container {
+    padding-left: 20px;
+  }
+  .home-heading {
+    font-size: 40px;
+  }
+  .home-text {
+    font-size: 18px;
+    width: 100%;
+  }
+}

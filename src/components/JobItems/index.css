@@ -63,6 +63,7 @@
 }
 .package {
   color: #ffffff;
+  margin-top: -20px;
 }
 .location-and-package-container {
   display: flex;
@@ -91,4 +92,37 @@
 }
 .nav-link {
   text-decoration: none;
+}
+
+@media screen and (max-width: 992px) {
+  .job-description {
+    font-weight: normal;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .job-description {
+    font-size: 16px;
+  }
+  .title-heading {
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .company-image {
+    height: 60px;
+    width: 60px;
+  }
+  .location {
+    font-weight: normal;
+  }
+  .package {
+    font-weight: normal;
+  }
+  .role {
+    font-weight: normal;
+  }
+  .location-container {
+    margin-right: 10px;
+  }
 }

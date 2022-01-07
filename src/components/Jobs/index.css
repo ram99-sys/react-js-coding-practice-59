@@ -78,3 +78,57 @@
 .failure-view {
   margin-bottom: 20px;
 }
+.not-display-search-bar {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .profile-and-filter-section {
+    width: 30%;
+  }
+  .search-container {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .profile-and-filter-section {
+    width: 35%;
+  }
+  .search-container {
+    width: 65%;
+  }
+  .not-display-search-bar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .jobs-container {
+    flex-direction: column;
+  }
+  .profile-and-filter-section {
+    width: 100%;
+  }
+  .search-container {
+    width: 100%;
+  }
+  .search-bar {
+    display: none;
+  }
+  .not-display-search-bar {
+    display: flex;
+  }
+  .search-bar-container {
+    width: 100%;
+  }
+  .search-input {
+    width: 96%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .jobs-container {
+    padding: 20px;
+  }
+}
