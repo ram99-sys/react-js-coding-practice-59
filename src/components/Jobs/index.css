@@ -17,6 +17,7 @@
 .profile-and-filter-section {
   width: 20%;
   margin-right: 50px;
+  min-height: 20vh;
 }
 .search-bar-container {
   display: flex;
@@ -130,5 +131,17 @@
 @media screen and (max-width: 576px) {
   .jobs-container {
     padding: 20px;
+  }
+  .failure-view {
+    height: 200px;
+    width: 200px;
+  }
+  .failure-view-heading {
+    text-align: center;
+    font-size: 20px;
+  }
+  .no-jobs-image {
+    height: 200px;
+    width: 200px;
   }
 }

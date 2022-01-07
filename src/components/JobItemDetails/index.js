@@ -227,6 +227,7 @@ class JobItemDetails extends Component {
       <img
         src="https://assets.ccbp.in/frontend/react-js/failure-img.png"
         alt="failure view"
+        className="failure-view1"
       />
       <h1 className="something-went-wrong-heading">
         Oops! Something Went Wrong

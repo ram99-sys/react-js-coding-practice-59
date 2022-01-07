@@ -69,7 +69,7 @@ class Profile extends Component {
   }
 
   renderFailureView = () => (
-    <div className="failure-view-container">
+    <div className="failure-view-container2">
       <button
         type="button"
         className="retry-button"
